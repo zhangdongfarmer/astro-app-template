@@ -1,0 +1,20 @@
+{
+  "$schema": "https://shadcn-vue.com/schema.json",
+  "style": "new-york",
+  "typescript": true,
+  "tailwind": {
+    "config": "tailwind.config.mjs",
+    "css": "src/styles/global.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@/shadcn-vue/components",
+    "composables": "@/shadcn-vue/composables",
+    "utils": "@/shadcn-vue/lib/utils",
+    "ui": "@/shadcn-vue/components/ui",
+    "lib": "@/shadcn-vue/lib"
+  },
+  "iconLibrary": "lucide"
+}
