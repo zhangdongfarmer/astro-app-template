@@ -1,0 +1,59 @@
+---
+import '@/styles/global.css'
+import Layout from '../layouts/Layout.astro';
+import Counter from '../components/Counter.vue';
+import TodoList from '../components/TodoList.vue';
+---
+
+<Layout>
+  <div class="container">
+    <h1 class="page-title">Vue + Pinia 示例</h1>
+    
+    <div class="section">
+      <h2 class="section-title">计数器组件</h2>
+      <p class="section-description">简单的计数器组件，使用Pinia状态管理</p>
+      <Counter client:load />
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">待办事项应用</h2>
+      <p class="section-description">使用Pinia进行状态管理的待办事项应用</p>
+      <TodoList client:load />
+    </div>
+  </div>
+</Layout>
+
+<style>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.section-description {
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+</style> 

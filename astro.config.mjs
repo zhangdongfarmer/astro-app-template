@@ -7,7 +7,12 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), tailwind({
-    applyBaseStyles: false,
-  })]
+  integrations: [
+    vue({
+      appEntrypoint: '/src/plugins/vue.ts'
+    }), 
+    tailwind({
+      applyBaseStyles: false,
+    })
+  ]
 });

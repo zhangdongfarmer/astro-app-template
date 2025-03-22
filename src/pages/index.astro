@@ -9,5 +9,56 @@ import { Button } from "@/shadcn-vue/components/ui/button"
 ---
 
 <Layout>
-	<Button>Click me</Button>
+	<div class="container">
+		<h1 class="title">Astro + Vue + Pinia</h1>
+		<p class="description">欢迎来到Astro应用模板</p>
+		
+		<div class="links">
+			<a href="/vue-app" class="link-button">
+				查看 Vue + Pinia 示例应用
+			</a>
+		</div>
+	</div>
 </Layout>
+
+<style>
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.title {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.description {
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
+	color: #666;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.link-button {
+	display: inline-block;
+	padding: 0.8rem 1.5rem;
+	background-color: #4a90e2;
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 500;
+	transition: background-color 0.2s;
+}
+
+.link-button:hover {
+	background-color: #357abd;
+}
+</style>
