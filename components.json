@@ -10,11 +10,11 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@/shadcn-vue/components",
-    "composables": "@/shadcn-vue/composables",
-    "utils": "@/shadcn-vue/lib/utils",
-    "ui": "@/shadcn-vue/components/ui",
-    "lib": "@/shadcn-vue/lib"
+    "components": "@astro-app/shadcn-vue/components",
+    "composables": "@astro-app/shadcn-vue/composables",
+    "utils": "@astro-app/shadcn-vue/lib/utils",
+    "ui": "@astro-app/shadcn-vue/components/ui",
+    "lib": "@astro-app/shadcn-vue/lib"
   },
   "iconLibrary": "lucide"
 }
